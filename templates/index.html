@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<body>
+
+    <div class="slides">
+        <img src="https://i.postimg.cc/9fWbfwJ6/cort-guitar.webp" class="slide active">
+        <img src="https://i.postimg.cc/Qx2F4vps/ibanez-guitar.webp" class="slide">
+        <img src="https://i.postimg.cc/y65xx2r4/yamaha-teclado.webp" class="slide">
+    </div>
+
+    <section class="welcome">
+   
+        <section class="hero">
+            
+        </section>
+        <br>
+    </section>
+
+        <script>
+            const slides = document.querySelectorAll(".slide");
+            let index = 0;
+
+            function trocarSlide() {
+                // remove active da atual
+                slides[index].classList.remove("active");
+
+                // vai para o próximo
+                index++;
+
+                // se chegou no fim, volta pro início
+                if (index >= slides.length) {
+                    index = 0;
+                }
+
+                // ativa o novo slide
+                slides[index].classList.add("active");
+            }
+
+            // troca a cada 3 segundos
+            setInterval(trocarSlide, 4000);
+
+        </script>
+</body>       <!--<section id="sobre" style="padding: 60px 20px; text-align: center; max-width: 900px; margin: auto;">
+    <h2 style="font-size:2rem; margin-bottom:20px; font-weight:700;">Sobre Nós</h2><br>
+    <p style="font-size:1.1rem; line-height:1.7; color:#333;">
+        Na <strong>Cifra Music</strong> cada detalhe aqui foi
+        pensado para inspirar você a transformar sua paixão em som.
+        Trabalhamos com violões, guitarras, acessórios e muito mais — sempre priorizando qualidade,
+        confiança e preço justo.
+    </p>
+    <p style="font-size:1.1rem; line-height:1.7; margin-top:15px; color:#444;">
+        Nossa missão é ajudar você a encontrar o instrumento ideal, seja para começar sua jornada musical ou
+        evoluir ainda mais suas habilidades.
+        Aqui, cada detalhe foi pensado para oferecer a melhor experiência possível.
+    </p>
+</section>
+-->
+
+{% endblock %}
