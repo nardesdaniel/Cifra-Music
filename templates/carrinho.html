@@ -2,23 +2,34 @@
 
 {% block content %}
 
+<main class="main">
 
+    <h1>Carrinho de Compras</h1>
 
-<h1>Carrinho de Compras</h1>
+    <div class="cart-container">
+        <div id="cartItems" class="total"></div>
 
-<div id="cartItems" class="total"></div>
+        <h2 class="h2-car">Total: <span id="cartTotal">00.000,00</span></h2>
 
-<h2>Total: <span id="cartTotal">00.000,00</span></h2>
-
-<div class="buttons-car">
-    <button class="btn-clear" onclick="clearCart()">Limpar Carrinho</button>
-    <a id="btn-whatsapp" target="_blank" class="btn-success" href="https://wa.me/5599999999999?text=${encodeURIComponent(message)}">
-        Comprar
-        <img src="https://i.postimg.cc/PJFtpp7d/icon-whats.png" width="20px" style="align-items: center;">
-    </a>
-</div>
+        <div class="buttons-car">
+            <button class="btn-clear" onclick="clearCart()">Limpar Carrinho</button>
+            <a id="btn-whatsapp" target="_blank" class="btn-success"
+                href="https://wa.me/5599999999999?text=${encodeURIComponent(message)}">
+                Comprar
+                <img src="https://i.postimg.cc/PJFtpp7d/icon-whats.png" width="20px" style="align-items: center;">
+            </a>
+        </div>
+    </div>
+</main>
 
 <script>
+
+    function precoBRL(value) {
+        return value.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+    }
 
     document.addEventListener("DOMContentLoaded", () => {
         let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -35,18 +46,25 @@
 
 
             list.innerHTML += `
-            <div class="cart-item">
-                <img src="${item.image}" width="80">
-                <strong>${item.name}</strong>
-                <span>Quantidade: ${item.qty}</span>
-                <span>Total: R$ ${(item.price * item.qty).toFixed(2)}</span>
+            <div class="cart-item"> 
+                    <img style="border-radius: 5px; width: 80px;" src="${item.image}" >
+
+                <div class="info">
+                    <p class="name">${item.name}</p>
+                    <span class="qty">Quantidade: ${item.qty}</span>
+                </div>
+
+                <div class="price">
+                    ${precoBRL(item.price * item.qty)}
+                </div>
+
             </div>
         `;
             //Mensagem do WhatsApp
             message += `${item.name} \n`;
         });
 
-        totalSpan.textContent = total.toFixed(2);
+        totalSpan.textContent = precoBRL(total)
 
         let link = `https://wa.me/5599999999999?text=${encodeURIComponent(message)}`;
 

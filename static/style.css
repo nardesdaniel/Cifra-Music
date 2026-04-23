@@ -275,6 +275,7 @@ ul {
     font-weight: bold;
 } */
 
+/*  */
 
 .menu {
     list-style: none;
@@ -285,6 +286,65 @@ ul {
 }
 
 /* Forçar ordem: cadastrar, listar, carrinho */
+
+/* Carrinho de compras*/
+
+#cartTotal {
+    font-size: 20px;
+}
+
+.h2-car {
+    font-size: 25px;
+}
+
+.cart-item {
+   display: flex;
+    margin-left: 10px;
+}
+
+.info {
+    margin-left: 20px;
+}
+
+.price {
+    display: flex;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+
+    color: #000 ;
+}
+
+.cart-item p {
+    height: 20px;
+}
+
+.cart-item span {
+    height: 20px;
+
+}
+
+.cart-container {
+    width: 600px;
+    height: 600px;
+    background-color: #c4c4c4;
+    border-radius: 5px;
+
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .menu {
     align-items: center;
 }
@@ -733,10 +793,13 @@ body {
 
     cursor: pointer;
 
+    width: 100px;
+    height: 20px;
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 8px;
+
 
     box-shadow: 0px 4px 10px rgba(37, 211, 102, 0.4);
 
