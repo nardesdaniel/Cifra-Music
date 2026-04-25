@@ -35,15 +35,17 @@ body {
 /* ==== Rodapé ==== */
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    height: 220px;
+    height: 270px;
     background: #000000;
 
     align-items: center;
     padding: 20px;
     /* empurra o rodapé para baixo */
 }
+
+
 
 footer li {
     display: flex;
@@ -290,12 +292,83 @@ ul {
 /* Carrinho de compras*/
 
 #cartTotal {
+    display: flex;
+    align-items: center;
     font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+#cartTotal2 {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 15px;
 }
 
 .h2-car {
-    font-size: 25px;
+    font-size: 20px;
+    color: #000000;
+
 }
+
+.resumo-btn-wts {
+    display: flex;
+}
+
+.h2-car-total {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.title-resumo {
+    display: flex;
+
+    margin-top: 5px;
+
+
+}
+
+.total-content {
+    display: flex;
+    text-align: center;
+    margin: 0px;
+}
+
+.resumo-product-title {
+    display: flex;
+    text-align: center;
+    margin: 0px;
+}
+
+.product-price {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 6%;
+    flex-direction: row;
+
+    gap: 18vh;
+}
+
+.content-values {
+    display: flex;
+
+    margin-top: 5%;
+    flex-direction: row;
+    gap: 18vh;
+}
+
+.resumo-btn-wts {
+    margin-top: 4%;
+}
+
+.span-car-product {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 
 .cart-item {
     display: flex;
@@ -330,7 +403,8 @@ ul {
 .resumo-car {
     display: flex;
     width: 20vw;
-    height: 30vh;
+    height: 27vh;
+    gap: 20px;
 
 
     flex-direction: column;
@@ -350,7 +424,7 @@ ul {
 
     background-color: #ffffff;
     border-radius: 10px;
-    
+
 
     gap: 10px;
     display: flex;

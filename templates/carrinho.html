@@ -5,7 +5,6 @@
 <main class="main">
 
 
-
     <div class="cart-container">
         <div id="cartItems" class="total"></div>
 
@@ -21,15 +20,43 @@
         </div>
     </div>
 
+
     <div class="resumo-car">
-        <h2 class="h2-car">Resumo da Compra</h2>
+
+        <div class="title-resumo">
+            <h2 class="h2-car">Resumo da Compra</h2>
+            
+        </div>
+      
+        <div class="product-price">
+            <div class="resumo-product-title">
+                <span class="span-car-product">Produto</span>
+            </div>
+
+            <p id="cartTotal2"></p>
+        </div>
 
 
+        <div class="content-values">
+            <div class="total-content">
+                <h2 class="h2-car-total">Total </h2>
+            </div>
 
-        <!--<p class="resumo-text">Após clicar em "Comprar", você será redirecionado para o WhatsApp, onde poderá finalizar seu pedido e tirar dúvidas diretamente conosco. Agradecemos pela preferência!</p>
-        !-->
-        <h2 class="h2-car">Total: <span id="cartTotal">00.000,00</span></h2>
+
+            <span id="cartTotal">00.000,00</span>
+
+        </div>
+            
+        <div class="resumo-btn-wts">
+            <a id="btn-whatsapp" target="_blank" class="btn-success"
+                href="https://wa.me/5599999999999?text=${encodeURIComponent(message)}">
+                Comprar
+                <img src="https://i.postimg.cc/PJFtpp7d/icon-whats.png" width="20px" style="align-items: center;">
+            </a>
+        </div>
+
     </div>
+
 
 </main>
 
@@ -48,7 +75,8 @@
         let message = "Olá! Tenho interesse nos seguintes produtos:";
 
         const list = document.getElementById("cartItems");
-        const totalSpan = document.getElementById("cartTotal");
+        const totalSpan = document.getElementById("cartTotal", "cartTotal2");
+        const totalSpan2 = document.getElementById("cartTotal2");
 
         let total = 0;
 
@@ -76,6 +104,8 @@
         });
 
         totalSpan.textContent = precoBRL(total)
+
+        totalSpan2.textContent = precoBRL(total)
 
         let link = `https://wa.me/5599999999999?text=${encodeURIComponent(message)}`;
 
