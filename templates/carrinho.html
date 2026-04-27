@@ -25,9 +25,9 @@
 
         <div class="title-resumo">
             <h2 class="h2-car">Resumo da Compra</h2>
-            
+
         </div>
-      
+
         <div class="product-price">
             <div class="resumo-product-title">
                 <span class="span-car-product">Produto</span>
@@ -46,7 +46,7 @@
             <span id="cartTotal">00.000,00</span>
 
         </div>
-            
+
         <div class="resumo-btn-wts">
             <a id="btn-whatsapp" target="_blank" class="btn-success"
                 href="https://wa.me/5599999999999?text=${encodeURIComponent(message)}">
@@ -56,7 +56,6 @@
         </div>
 
     </div>
-
 
 </main>
 
@@ -78,19 +77,23 @@
         const totalSpan = document.getElementById("cartTotal", "cartTotal2");
         const totalSpan2 = document.getElementById("cartTotal2");
 
+
         let total = 0;
 
-        cart.forEach(item => {
+
+        cart.forEach((item, index) => {
             total += item.price * item.qty;
 
 
+
             list.innerHTML += `
-            <div class="cart-item"> 
+            <div class="cart-item">
                     <img style="border-radius: 5px; width: 80px;" src="${item.image}" >
 
                 <div class="info">
                     <p class="name">${item.name}</p>
                     <span class="qty">Quantidade: ${item.qty}</span>
+                    <div class="btn-excluir-produto" data-index="${index}" style="width: 7%;" class"btn-excluir-produto"><img class="img-lixeira" src="https://i.postimg.cc/8PmtrGhJ/lixeira.webp"></div>
                 </div>
 
                 <div class="price">
@@ -103,6 +106,18 @@
             message += `${item.name} \n`;
         });
 
+        function removeProduct() {
+            const list = ""
+
+        }
+
+        const btnExcluir = document.getElementById("btn-excluir-produto");
+
+        btnExcluir.addEventListener("click", () => {
+            removeProduct();
+        });
+
+
         totalSpan.textContent = precoBRL(total)
 
         totalSpan2.textContent = precoBRL(total)
@@ -111,6 +126,7 @@
 
         document.getElementById("btn-whatsapp").href = link;
     });
+
 
 
     function clearCart() {

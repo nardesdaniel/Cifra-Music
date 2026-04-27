@@ -313,6 +313,22 @@ ul {
 
 }
 
+.btn-excluir-produto {
+    background-color: #9b9b9b;
+    width: 10px;
+
+}
+
+#btn-excluir-produto:hover {
+    cursor: pointer;
+
+}
+
+.img-lixeira {
+    width: 20px;
+    height: 20px;
+}
+
 .resumo-btn-wts {
     display: flex;
 }
@@ -377,6 +393,7 @@ ul {
 }
 
 .info {
+    width: 45%;
     margin-left: 20px;
 }
 
@@ -385,7 +402,7 @@ ul {
     width: 30%;
 
     padding: 0% 0% 0% 8%;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 
     color: #000;
