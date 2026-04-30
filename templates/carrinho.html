@@ -74,7 +74,7 @@
         let message = "Olá! Tenho interesse nos seguintes produtos:";
 
         const list = document.getElementById("cartItems");
-        const totalSpan = document.getElementById("cartTotal", "cartTotal2");
+        const totalSpan = document.getElementById("cartTotal");
         const totalSpan2 = document.getElementById("cartTotal2");
 
 
@@ -93,7 +93,7 @@
                 <div class="info">
                     <p class="name">${item.name}</p>
                     <span class="qty">Quantidade: ${item.qty}</span>
-                    <div class="btn-excluir-produto" data-index="${index}" style="width: 7%;" class"btn-excluir-produto"><img class="img-lixeira" src="https://i.postimg.cc/8PmtrGhJ/lixeira.webp"></div>
+                    <div id="btn-excluir-produto" data-index="${index}" style="width: 7%;" class"btn-excluir-produto"><img class="img-lixeira" src="https://i.postimg.cc/8PmtrGhJ/lixeira.webp"></div>
                 </div>
 
                 <div class="price">
@@ -106,15 +106,24 @@
             message += `${item.name} \n`;
         });
 
-        function removeProduct() {
-            const list = ""
-
-        }
-
         const btnExcluir = document.getElementById("btn-excluir-produto");
 
-        btnExcluir.addEventListener("click", () => {
-            removeProduct();
+        document.getElementById("cartItems").addEventListener("click", (e) => {
+
+            const botao = e.target.closest(".btn-excluir-produto");
+
+            if (botao) {
+                const index = botao.dataset.index;
+
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                cart.splice(index, 1);
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                window.location.reload();
+            }
+
         });
 
 
