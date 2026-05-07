@@ -1,0 +1,152 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<main class="main">
+
+    <div class="cart-container">
+        <div id="cartItems" class="total"></div>
+        <div class="centrar-carrinho">
+            <p id="carrinho-vazio-none"></p>
+            <img id="imagem-vazia" src="https://i.postimg.cc/LX1wLZgM/carrinho-vazio-removebg-preview.png" width="250px"
+                style="margin-bottom: 50px;">
+        </div>
+    </div>
+
+
+    <div class="resumo-car">
+
+        <div class="title-resumo">
+            <h2 class="h2-car">Resumo da Compra</h2>
+
+        </div>
+
+        <div class="product-price">
+            <div class="resumo-product-title">
+                <span class="span-car-product">Produto</span>
+            </div>
+
+            <p id="cartTotal2"></p>
+        </div>
+
+
+        <div class="content-values">
+            <div class="total-content">
+                <h2 class="h2-car-total">Total </h2>
+            </div>
+
+
+            <span id="cartTotal">00.000,00</span>
+
+        </div>
+
+        <div class="resumo-btn-wts">
+            <a id="btn-whatsapp" target="_blank" class="btn-success"
+                href="https://wa.me/5599999999999?text=${encodeURIComponent(message)}">
+                Comprar
+                <img src="https://i.postimg.cc/PJFtpp7d/icon-whats.png" width="20px" style="align-items: center;">
+            </a>
+        </div>
+
+    </div>
+
+</main>
+
+<script>
+
+    function precoBRL(value) {
+        return value.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+        let message = "Olá! Tenho interesse nos seguintes produtos:";
+
+        const list = document.getElementById("cartItems");
+        const totalSpan = document.getElementById("cartTotal");
+        const totalSpan2 = document.getElementById("cartTotal2");
+
+        const carrinhomensagem = document.getElementById("carrinho-vazio-none");
+        const imagemVazia = document.getElementById("imagem-vazia");
+
+        let total = 0;
+
+
+
+        cart.forEach((item, index) => {
+            total += item.price * item.qty;
+
+
+
+
+            list.innerHTML += `
+            <div class="cart-item">
+                    <img style="border-radius: 5px; width: 80px;" src="${item.image}" >
+
+                <div class="info">
+                    <p class="name">${item.name}</p>
+                    <span class="qty">Quantidade: ${item.qty}</span>
+                    <div class="btn-excluir-produto" data-index="${index}" style="width: 7%;" class="btn-excluir-produto"><img class="img-lixeira" src="https://i.postimg.cc/8PmtrGhJ/lixeira.webp"></div>
+                </div>
+
+                <div class="price">
+                    ${precoBRL(item.price * item.qty)}
+                </div>
+                
+            </div>
+        `;
+            //Mensagem do WhatsApp
+            message += `${item.name} \n`;
+        });
+
+        if (cart.length === 0) {
+            carrinhomensagem.textContent = "O carrinho está vazio.";
+            // list.textContent = carrinhomensagem;
+        }
+
+
+        const btnExcluir = document.getElementById("btn-excluir-produto");
+
+        document.getElementById("cartItems").addEventListener("click", (e) => {
+
+            const botao = e.target.closest(".btn-excluir-produto");
+
+            if (botao) {
+                const index = botao.dataset.index;
+
+                let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+                cart.splice(index, 1);
+
+                localStorage.setItem("cart", JSON.stringify(cart));
+
+                window.location.reload();
+            }
+
+        });
+
+
+        totalSpan.textContent = precoBRL(total)
+
+        totalSpan2.textContent = precoBRL(total)
+
+        let link = `https://wa.me/5599999999999?text=${encodeURIComponent(message)}`;
+
+        document.getElementById("btn-whatsapp").href = link;
+    });
+
+
+
+    /*function clearCart() {
+        localStorage.removeItem("cart");
+        window.location.reload();
+    }*/
+</script>
+<!--href="https://chat.whatsapp.com/DF13H0zFc9V9nNTLHIuiAF${item.name} !-->
+
+
+{% endblock %}

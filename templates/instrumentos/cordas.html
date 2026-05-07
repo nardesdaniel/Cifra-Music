@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cards-container">
+
+<div class="card">
+        <img src="https://i.postimg.cc/pdm00kdH/corda-daddrio-2-removebg-preview-(1).png" alt="Violão 1">
+        <h3>Encordoamento Para Guitarra 10-46 D'Addario XL Nickel ESXL110</h3>
+        <p> </p>
+        <h2 class="precoViolao">R$ 332,99</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('corda_modelo', modelo='daddario') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/8zRXJwCV/corda-elixir-removebg-preview.png" alt="Violão 2">
+        <h3>Encordoamento Elixir Cordas 011 Medium Nanoweb Para Guitarra</h3>     
+        <p> </p>
+        <h2 class="precoViolao">R$ 177,79</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('corda_modelo', modelo='elixir') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/L86WgwJ5/corda-solex.webp" alt="Violão 3">
+        <h3>Encordoamento Solez Guitarra 010 046 Slg10 Ga 2 Cordas Extra</h3>
+        <p> </p>
+        <h2 class="precoViolao" >R$ 43,96</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('corda_modelo', modelo='solez') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/Vv0fw588/Corda-nig.webp" alt="Violão 4">
+        <h3>Encordoamento 010 Nig N500 Aço Violão + Corda Extra+ Palheta</h3>
+        <p> </p>
+        <h2 class="precoViolao">R$  55,65</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('corda_modelo', modelo='nig') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/yYJMLwVR/Corda-Ernie-Ball.webp" alt="Violão 5">
+        <h3>Ernie Ball Enc. 045-100 P/ Baixo 4 Cordas Super Slinky Niquel P02834</h3>
+        <p> </p>
+        <h2 class="precoViolao">R$ 183,95</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('corda_modelo', modelo='ernieball') }}">Comprar</a></button>
+    </div>
+</div>
+{% endblock %}

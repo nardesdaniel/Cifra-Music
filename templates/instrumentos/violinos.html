@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cards-container">
+
+    <div class="card">
+        <img src="https://i.postimg.cc/x8YKYKK5/violino-stentor.webp" alt="Violão 1">
+        <h3>Violino Arco Breu Cavalete <br> Acústico 4/4 Madeira Com Estojo</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 254,99</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('violino_modelo', modelo='stentor') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="" alt="Violão 2">
+        <h3></h3>
+        <p></p>
+        <h2 class="precoViolao">R$ </h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('violino_modelo', modelo='yamaha') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="" alt="Violão 3">
+        <h3></h3>
+        <p></p>
+        <h2 class="precoViolao">R$ </h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('violino_modelo', modelo='fiddlerman') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="" alt="Violão 4">
+        <h3></h3>
+        <p></p>
+        <h2 class="precoViolao">R$ </h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('violino_modelo', modelo='cort') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="" alt="Violão 5">
+        <h3></h3>
+        <p></p>
+        <h2 class="precoViolao">R$ </h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('violino_modelo', modelo='gliga') }}">Comprar</a></button>
+    </div>
+</div>
+{% endblock %}

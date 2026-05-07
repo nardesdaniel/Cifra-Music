@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cards-container">
+
+    <div class="card">
+        <img src="https://i.postimg.cc/HnBhY7pM/Bateria-Dw.webp" alt="Violão 1">
+        <h3>Bateria Dw Design 5 Peças</h3>
+        <p>Guitarra elétrica, profissional</p>
+        <h2 class="precoViolao">R$ 25.000,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('bateria_modelo', modelo='dw_design') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/nL4TVQ2H/Bateria-Pearl-Master.webp" alt="Violão 2">
+        <h3>Bateria Pearl Master</h3>
+        <p>Qualidade e timbre incrível, e som extrema-mente marcante.</p>
+        <h2 class="precoViolao">R$ 50.000,00 </h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('bateria_modelo', modelo='pearl_master') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/Gh0XzMvt/guitarra-3-removebg-preview.png" alt="Violão 3">
+        <h3>Guitarra Tagima JA-1 Modern Juninho Afram</h3>
+        <p>Para palco, estúdio e clipes.</p>
+        <h2 class="precoViolao">R$ 8.661,71</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('bateria_modelo', modelo='eletronica_roland') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/k4s7wVhY/guitarra-4-removebg-preview-(1).png" alt="Violão 4">
+        <h3>Guitarra Suhr Signature Andre Nieri HH Modern</h3>
+        <p>Melhor da nossa loja.</p>
+        <h2 class="precoViolao">R$ 39.990,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('bateria_modelo', modelo='eletronica_zildjian') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/nzR6CqWV/guitarra-5-removebg-preview.png" alt="Violão 5">
+        <h3>Guitarra Gretsch G5422GLH Electromatic</h3>
+        <p>Guitarra mais bonita da loja e semiacústica.</p>
+        <h2 class="precoViolao">R$ 10.999,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('bateria_modelo', modelo='eletronica_all_mesh') }}">Comprar</a></button>
+    </div>
+</div>
+{% endblock %}

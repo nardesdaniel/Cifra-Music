@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cards-container">
+
+    <div class="card">
+        <img src="https://i.postimg.cc/rsP3q18V/amplificador-fender.webp" alt="Violão 1">
+        <h3>Combo Fender Amplificador De Guitarra Champion 40 Preto/prata</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 2.899,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('amplificador_modelo', modelo='fender') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/sX6sZZVn/amplificador-marshall-2.webp" alt="Violão 2">
+        <h3>Amplificador Guitarra Marshall Code 25 Bluetooth 110v/220v</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 1.792,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('amplificador_modelo', modelo='marshall') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/8z0Q1Vz9/amplificador-vox.webp" alt="Violão 3">
+        <h3>Amplificador Valvulado Vox Combo Ac30c2 Com Nota Fiscal Cor Preto</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 10.505,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('amplificador_modelo', modelo='vox') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/28PcS8fP/amplificador-sheldon.webp" alt="Violão 4">
+        <h3>Cubo Amplificador Para Baixo Bss150 Sheldon Preto 15w</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 383,47</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('amplificador_modelo', modelo='sheldon') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/Jn3hFh58/amplificador-orange.webp" alt="Violão 5">
+        <h3>Amplificador Combo Orange Crush 35RT 35W para Guitarra Classe D Transistor</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 3.152,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('amplificador_modelo', modelo='orange') }}">Comprar</a></button>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cards-container">
+
+    <div class="card">
+        <img style="padding: 20px 20px;" src="https://i.postimg.cc/k58mfXQd/pedal-boss.webp" alt="Violão 1">
+        <h3>Pedal de Efeito Boss Distortion DS-1</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 560,28</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('pedal_modelo', modelo='boss') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/cLqv17qG/pedal-dunlop.webp" alt="Violão 2">
+        <h3>Pedal Volume X Mini Dvp4 Dunlop</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 2.699,90</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('pedal_modelo', modelo='dunlop') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/RFkh79sr/pedal-electro-harmonix.webp" alt="Violão 3">
+        <h3>Pedal De Overdrive Electro Harmonix Crayon - E Cor Branco</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 752,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('pedal_modelo', modelo='electro_harmonix') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/R002RHyK/pedal-electro-tc.webp" alt="Violão 4">
+        <h3>Pedal Tc Electronic Grand Magus</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 360,06</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('pedal_modelo', modelo='tc_electronic') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img style="padding: 20px 20px;" src="https://i.postimg.cc/FR55v7wY/pedal-mxr.webp" alt="Violão 5">
+        <h3>Pedal de Guitarra Elétrica MXR Carbon Copy Analog Delay M169 Verde</h3>
+        <p></p>
+        <h2 class="precoViolao">R$ 1.790,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('pedal_modelo', modelo='mxr') }}">Comprar</a></button>
+    </div>
+</div>
+{% endblock %}

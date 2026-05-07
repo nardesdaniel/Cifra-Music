@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cards-container">
+
+    <div class="card">
+        <img src="https://i.postimg.cc/6p6qFhzS/baixo-fender-jazz.webp" alt="Violão 2">
+        <h3>Fender Jazz Bass American 4 cordas</h3>     
+        <p>Fornece um som mais sofisticado ao seu instrumento.</p>
+        <h2 class="precoViolao">R$ 18.500,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('baixo_modelo', modelo='fenderjazz') }}">Comprar</a></button>
+    </div>
+
+
+    <div class="card">
+        <img src="https://i.postimg.cc/tRrrg3sX/Baixo-Fender-Precision.webp" alt="Violão 4">
+        <h3>Baixo Elétrico Fender Precision 1960</h3>
+        <p>Vendida em unidade.</p>
+        <h2 class="precoViolao">R$ 69.999,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('baixo_modelo', modelo='fenderprecision') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/FK9WRDVr/Baixo-Ibanez.webp" alt="Violão 5">
+        <h3>Baixo 5 Cordas Ativo Ibanez Workshop Sdgr Srms725</h3>
+        <p>Vendida em unidade.</p>
+        <h2 class="precoViolao">R$ 19.749,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('baixo_modelo', modelo='ibanez') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/YC42PzWQ/Baixo-Yamaha-Bb.webp" alt="Violão 4">
+        <h3>Fender Jazz Bass American 4 cordas</h3>
+        <p>Muito estética e protege com excelência</p>
+        <h2 class="precoViolao">R$  18.500,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('baixo_modelo', modelo='yamahabb') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/HLZ2LHLS/Baixo-Yamaha-Signature.webp" alt="Violão 5">
+        <h3>Case de violão almodada</h3>
+        <p>Muito estética e protege com excelência</p>
+        <h2 class="precoViolao">R$ 2.999,90</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('baixo_modelo', modelo='yamahasignature') }}">Comprar</a></button>
+    </div>
+</div>
+{% endblock %}
