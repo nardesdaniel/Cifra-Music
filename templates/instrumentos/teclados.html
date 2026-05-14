@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="cards-container">
+
+<div class="card">
+        <img src="https://i.postimg.cc/wTcnNKnz/guitarra-1-removebg-preview-(2).png" alt="Violão 1">
+        <h3>Teclado Yamaha Psr-e473 Arranjador Kit Capa Suporte E Pedal</h3>
+        <p>Guitarra elétrica, profissional</p>
+        <h2 class="precoViolao">R$ 8.757,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('teclado_modelo', modelo='yamaha') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/DybcX1Nx/guitarra-2-removebg-preview.png" alt="Violão 2">
+        <h3>Teclado Sintetizador de Palco Roland V-Stage 76 Teclas</h3>     
+        <p>Qualidade e timbre incrível, e som extrema-mente marcante.</p>
+        <h2 class="precoViolao">R$ 23.000,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('teclado_modelo', modelo='sintetizador') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/Gh0XzMvt/guitarra-3-removebg-preview.png" alt="Violão 3">
+        <h3>Teclado Nord Stage 4 88 HA</h3>
+        <p>Para palco, estúdio e clipes.</p>
+        <h2 class="precoViolao" >R$ 33.500,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('teclado_modelo', modelo='nordstage') }}">Comprar</a></button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.postimg.cc/k4s7wVhY/guitarra-4-removebg-preview-(1).png" alt="Violão 4">
+        <h3>Teclado Arranjador Casio Mz-x500</h3>
+        <p>Melhor da nossa loja.</p>
+        <h2 class="precoViolao">R$ 7.000,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('teclado_modelo', modelo='arranjador') }}">Comprar</a></button>
+    </div>
+    <div class="card">
+        <img src="https://i.postimg.cc/k4s7wVhY/guitarra-4-removebg-preview-(1).png" alt="Violão 4">
+        <h3>Teclado Casio Casiotone 61 Teclas Ct-s300 + Suporte + Pedal</h3>
+        <p>Melhor da nossa loja.</p>
+        <h2 class="precoViolao">R$ 7.000,00</h2>
+        <button class="buttonViolao"><a class="aViolao" style="text-decoration: none;" href="{{ url_for('teclado_modelo', modelo='casio') }}">Comprar</a></button>
+    </div>
+</div>
+{% endblock %}
