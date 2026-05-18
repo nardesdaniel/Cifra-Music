@@ -4,6 +4,7 @@ const reviewSection = document.querySelector(".review-section");
 const pageId = reviewSection.dataset.pageId;
 
 // chave única no LocalStorage
+
 const STORAGE_KEY = `reviews_${pageId}`;
 // ⭐⭐⭐ Sistema de estrelas (hover + clique)
 document.querySelectorAll("#starContainer span").forEach(star => {

@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+
+{% block content %}
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,7 +29,7 @@
 
         <!-- Login -->
 
-        <form method="POST" action="/login">
+        <form method="POST" action="login.php">
             <label for="usuario">Usuário:</label>
             <input type="text" name="usuario" id="usuario" required>
 
@@ -37,6 +40,16 @@
         </form>
         <p>Não tem uma conta? <a class="cadastro-link" href="/usuario_cliente">Cadastre-se</a></p>
     </div>
+
+    <?php
+    
+
+    
+    
+    
+    
+    ?>
+
 
     <!-- Script para animação da barra de progresso -->
     <script>
@@ -70,3 +83,5 @@
 </body>
 
 </html>
+
+{% endblock %}

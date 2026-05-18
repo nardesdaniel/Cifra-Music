@@ -1,0 +1,42 @@
+<body>
+
+    <div class="slides">
+        <img src="https://i.postimg.cc/9fWbfwJ6/cort-guitar.webp" class="slide active">
+        <img src="https://i.postimg.cc/Qx2F4vps/ibanez-guitar.webp" class="slide">
+        <img src="https://i.postimg.cc/y65xx2r4/yamaha-teclado.webp" class="slide">
+    </div>
+
+    <section class="welcome">
+
+        <section class="hero">
+
+        </section>
+
+        <br>
+    </section>
+
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        let index = 0;
+
+        function trocarSlide() {
+            // remove active da atual
+            slides[index].classList.remove("active");
+
+            // vai para o próximo
+            index++;
+
+            // se chegou no fim, volta pro início
+            if (index >= slides.length) {
+                index = 0;
+            }
+
+            // ativa o novo slide
+            slides[index].classList.add("active");
+        }
+
+        // troca a cada 3 segundos
+        setInterval(trocarSlide, 4000);
+
+    </script>
+</body> 
