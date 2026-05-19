@@ -556,7 +556,6 @@ a:hover {
 .form-card {
     display: flex;
     flex-direction: column;
-    gap: 15px;
 }
 
 .form-card label {
@@ -565,7 +564,7 @@ a:hover {
 
 .form-card input,
 select {
-    padding: 10px;
+
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 15px;

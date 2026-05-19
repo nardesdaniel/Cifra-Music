@@ -8,7 +8,7 @@ CREATE TABLE tb_usuario(
   id INT AUTO_INCREMENT,
   nm_usuario VARCHAR(40),
   nm_login VARCHAR(20),
-  ds_senha VARCHAR(32),
+  ds_senha VARCHAR(255),
   inadmin  ENUM("2"),
   CONSTRAINT pk_usuario PRIMARY KEY(id)
 );
@@ -17,7 +17,7 @@ CREATE TABLE tb_admin(
   id INT AUTO_INCREMENT,
   nm_usuario VARCHAR(40),
   nm_login VARCHAR(20),
-  ds_senha VARCHAR(32),
+  ds_senha VARCHAR(255),
   inadmin  ENUM("1"),
   CONSTRAINT pk_usuario PRIMARY KEY(id)
 );
