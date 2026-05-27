@@ -564,7 +564,6 @@ a:hover {
 
 .form-card input,
 select {
-
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 15px;
@@ -909,7 +908,6 @@ body {
 }
 
 /* ==== Estilização de Botões carrinho  ====*/
-
 .btn-success {
     background: #25D366;
     color: white;
@@ -1491,7 +1489,6 @@ a {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-
     background: rgb(227, 227, 227);
     padding: 7px;
     /* remove espaço interno */
