@@ -4,7 +4,7 @@ html {
 }
 
 
-body {
+body {  
     margin: 0;
     padding: 0;
 
@@ -44,8 +44,6 @@ footer {
     padding: 20px;
     /* empurra o rodapé para baixo */
 }
-
-
 
 footer li {
     display: flex;
@@ -466,6 +464,8 @@ ul {
 
 }
 
+
+
 .main {
     display: flex;
     background-color: #eeeeee;
@@ -676,7 +676,7 @@ select {
 /*==== Violão Takamine ====*/
 .gallery {
     margin-top: 30px;
-
+    
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -963,7 +963,7 @@ body {
     font-size: 16px;
     font-weight: bold;
 
-    padding: 10px px;
+    padding: 10px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -971,7 +971,10 @@ body {
     transition: 0.3s ease;
 }
 
-.container
+.container-home1 {
+
+    
+}
 /* ==== Imagens do Produto ==== */
 
 .thumbnails {
@@ -1488,12 +1491,14 @@ a {
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
+
     background: rgb(227, 227, 227);
     padding: 7px;
     /* remove espaço interno */
     width: 200px;
     /* largura do menu */
     height: 160px;
+    border-radius: 6px;
     text-decoration: none;
     list-style: none;
     margin-top: 22px;
@@ -1531,11 +1536,11 @@ a {
     display: block;
     width: 100%;
 }
-
+/*
 .sub-menu li:hover {
     background-color: #f2f2f2;
 }
-
+*/
 .open-menu:hover .sub-menu {
     color: #000000;
     display: block;

@@ -20,9 +20,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Verifica se encontrou usuário
     if ($usuario) {
+        
 
         // Verifica senha criptografada
         if (password_verify($senha, $usuario['ds_senha'])) {
+
+        
 
             //  Criar variáveis de sessão
             $_SESSION['id'] = $usuario['id'];
@@ -30,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['logado'] = true;
 
             // Redireciona para a listagem de usuários
-            header("Location: index.php");
+            header("Location: home1.php");
             exit();
 
         } else {
