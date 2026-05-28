@@ -3,16 +3,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="<?= BASE_URL ?>/static/style.css">
-  <title>Case de Guitarra</title>
+  <title>Palheta Fender</title>
 </head>
 
 <body>
+
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/templates/base.php'; ?>
 
   <script>
@@ -29,12 +30,13 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
   <div class="gallery" style="justify-content: center; height: 600px;">
 
 
+
     <div class="main-image">
-      <img id="mainImg" src="https://i.postimg.cc/jjjT1pZx/case.webp">
+      <img id="mainImg" src="https://i.postimg.cc/YqdhtSM6/acessorio-5.webp">
     </div>
 
     <div class="product-info">
-      <h1 class="product-title">Case de guitarra almofadada</h1>
+      <h1 class="product-title">Palhetas fender mm personalizado</h1>
 
       <div class="ratings">
         <div class="review-summary">
@@ -44,7 +46,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
       </div>
 
       <div class="price-block">
-        <span class="price-current">R$ 3.999,90</span>
+        <span class="price-current">R$ 12,65</span>
         <span class="price-installments">Em até 10x sem juros</span>
 
         <a class="btn-whatsapp" target="_blank"
@@ -60,33 +62,31 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 
   <div class="txt">
     <h1 style="display: flex; justify-content: center; margin-top: 30px;" class="detalhes"><br>Descrição</h1>
-    <h2>Case de guitarra almofadada</h2>
+    <h2>Palheta Fender</h2>
 
-    <p style="margin-left: 500px; margin-right: 500px;">A Gator Cases oferece os produtos que protegem o que é
-      importante
-      para você. Este é o Gator GC-SG. Faz parte da linha Molded Guitar Cases deles. É uma caixa Deluxe Molded para
-      elétricas de corpo sólido, como a Gibson SG.® A carcaça externa rígida, moldada em plástico ABS resistente a
-      impactos, para um exterior ultra durável com espuma EPS e forro macio, proporciona um interior protetor, protegido
-      contra riscos e riscos.</p>
+    <p style="margin-left: 500px; margin-right: 500px;">Palheta fender mm personalizado, feita em material resistente e
+      com design ergonômico para melhor pegada. Ideal para guitarristas que buscam conforto e precisão ao tocar.
+      Disponível em diversas cores e espessuras para atender às suas preferências musicais. vendida por unidade.</p>
 
     <h1 class="especificacoes">Especificações técnicas:</h1>
 
     <ul>
-      <li>Modelo: Gator</li>
+      <li>Modelo: Fender</li>
       <li>Categoria: acessorios</li>
-      <li>Cor: Preto</li>
+      <li>Cor: RGB</li>
     </ul>
 
     <h2>Fotos do Produto</h2>
 
     <div class="img-descricao">
-      <img style="width: 500px; height: 500px; margin-bottom: 20px;" src="https://i.postimg.cc/jjjT1pZx/case.webp">
+      <img style="width: 500px; height: 500px; margin-bottom: 20px;"
+        src="https://i.postimg.cc/YqdhtSM6/acessorio-5.webp">
     </div>
   </div>
 
   <br>
 
-  <div class="review-section" data-page-id="caseguitarra">
+  <div class="review-section" data-page-id="palhetafender">
     <h2>Avaliações de clientes</h2>
 
     <div class="review-summary">
@@ -121,10 +121,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
   <script>
     function addToCart() {
       const product = {
-        id: "caseguitarra",
-        name: "Case de guitarra almofadada",
-        price: 3999.90,
-        image: "https://i.postimg.cc/jjjT1pZx/case.webp",
+        id: "palhetafender",
+        name: "Palhetas fender mm personalizado",
+        price: 12.65,
+        image: "https://i.postimg.cc/YqdhtSM6/acessorio-5.webp ",
         qty: 1
       };
 
@@ -143,7 +143,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
       alert("Produto adicionado ao carrinho!");
     }
   </script>
-  
+
   <footer>
     <div class="titlefooter">
 

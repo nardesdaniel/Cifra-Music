@@ -1,6 +1,6 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/config.php';
-include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
 
 ?>
 
@@ -16,7 +16,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <?php if (isset($_SESSION["logado"])): ?>
                 <!-- <a class="login_admin" style="text-decoration: none;" href="{{ url_for('login_admin')}}">Login Admin</a> -->
-                <div class="div-sair"><a class="sair" href="../logout.php">Sair</a>
+                <div class="div-sair"><a class="sair" href="<?= BASE_URL?>/logout.php">Sair</a>
                 </div>
             <?php endif; ?>
 
@@ -39,14 +39,14 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
                         href="<?= BASE_URL ?>/templates/instrumentos/acessorios/capotraste.php">Capotraste</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('acessorio_modelo', modelo='palhetaguitarra') }}">Palheta de Guitarra</a>
+                        href="<?= BASE_URL ?>/templates/instrumentos/acessorios/palhetaguitarra.php">Palheta de Guitarra</a>
                 </li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('acessorio_modelo', modelo='palhetafender') }}">Palheta Fender</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/acessorios/palhetafender.php">Palheta Fender</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px; "
-                        href="instrumentos/acessorios/caseguitarra.php">Case de Guitarra</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/acessorios/caseguitarra.php">Case de Guitarra</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('acessorio_modelo', modelo='caseviolao') }}">Case de Violão</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/acessorios/caseviolao.php">Case de Violão</a></li>
             </ul>
         </div>
         <div class="open-menu">
@@ -57,15 +57,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('corda_modelo', modelo ='daddario') }}">Corda Dáddario</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/cordas/cordadaddario.php">Corda Dáddario</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('corda_modelo', modelo ='elixir') }}">Corda Elixir</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/cordas/cordaelixir.php">Corda Elixir</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('corda_modelo', modelo ='solez') }}">Corda Solez</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/cordas/cordasolez.php">Corda Solez</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('corda_modelo', modelo ='nig') }}">Corda NIG</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/cordas/cordanig.php">Corda NIG</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('corda_modelo', modelo ='ernieball') }}">Corda Ernie ball</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/cordas/cordaernieball.php">Corda Ernie ball</a></li>
 
             </ul>
         </div>
@@ -77,16 +77,16 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('pedal_modelo', modelo ='boss') }}">Pedal Boss</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/pedais/pedalboss.php">Pedal Boss</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('pedal_modelo', modelo ='dunlop') }}">Pedal Dunlop</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/pedais/pedaldunlop.php">Pedal Dunlop</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('pedal_modelo', modelo ='electro_harmonix') }}">Pedal Electro Harmonix</a>
+                        href="<?= BASE_URL ?>/templates/instrumentos/pedais/pedalelectroharmonix.php">Pedal Electro Harmonix</a>
                 </li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('pedal_modelo', modelo ='tc_electronic') }}">Pedal TC Electronic</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/pedais/pedaltcelectronic.php">Pedal TC Electronic</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('pedal_modelo', modelo ='mxr') }}">Pedal MXR</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/pedais/pedalmxr.php">Pedal MXR</a></li>
             </ul>
         </div>
         <div class="open-menu">
@@ -97,16 +97,16 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('amplificador_modelo', modelo ='fender') }}">Amplificador Fender</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/amplificadores/amplificadorfender.php">Amplificador Fender</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('amplificador_modelo', modelo ='marshall') }}">Amplificador Marshall</a>
+                        href="<?= BASE_URL ?>/templates/instrumentos/amplificadores/amplificadormarshall.php">Amplificador Marshall</a>
                 </li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('amplificador_modelo', modelo ='orange') }}">Amplificador Orange</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/amplificadores/amplificadororange.php">Amplificador Orange</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('amplificador_modelo', modelo ='sheldon') }}">Amplificador Sheldon</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/amplificadores/amplificadorsheldon.php">Amplificador Sheldon</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('amplificador_modelo', modelo ='vox') }}">Amplificador Vox</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/amplificadores/amplificadorvox.php">Amplificador Vox</a></li>
             </ul>
         </div>
         <div class="open-menu">
@@ -117,15 +117,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('violao_modelo', modelo ='takamine') }}">Violão Takamine</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/violoes/violaotakamine.php">Violão Takamine</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('violao_modelo', modelo ='martin') }}">Violão Martin</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/violoes/violaomartin.php">Violão Martin</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('violao_modelo', modelo ='cort') }}">Violão Cort</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/violoes/violaocort.php">Violão Cort</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('violao_modelo', modelo ='gibson') }}">Violão Gibson</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/violoes/violaogibson.php">Violão Gibson</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('violao_modelo', modelo ='taylor') }}">Violão Taylor</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/violoes/violaotaylor.php">Violão Taylor</a></li>
             </ul>
         </div>
         <div class="open-menu">
@@ -136,15 +136,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('violino_modelo', modelo ='stentor') }}">Violino Stentor</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/violinos/violinostentor.php">Violino Stentor</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('violino_modelo', modelo ='yamaha') }}">Violino Yamaha</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/violinos/violinoyamaha.php">Violino Yamaha</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('violino_modelo', modelo ='fiddlerman') }}">Violino Fiddlerman</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/violinos/violinofiddlerman.php">Violino Fiddlerman</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('violino_modelo', modelo ='cort') }}">Violino Cort</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/violinos/violinocort.php">Violino Cort</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('violino_modelo', modelo ='gliga') }}">Violino Gliga</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/violinos/violinogliga.php">Violino Gliga</a></li>
             </ul>
         </div>
         <div class="open-menu">
@@ -155,15 +155,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('guitarra_modelo', modelo ='cort') }}">Guitarra Cort</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/guitarras/guitarracort.php">Guitarra Cort</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('guitarra_modelo', modelo ='fender') }}">Guitarra Fender</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/guitarras/guitarrafender.php">Guitarra Fender</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('guitarra_modelo', modelo ='tagima') }}">Guitarra Tagima</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/guitarras/guitarratagima.php">Guitarra Tagima</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('guitarra_modelo', modelo ='suhr') }}">Guitarra Suhr</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/guitarras/guitarrasuhr.php">Guitarra Suhr</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('guitarra_modelo', modelo ='gretsch') }}">Guitarra Gretsch</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/guitarras/guitarragretsch.php">Guitarra Gretsch</a></li>
             </ul>
         </div>
         <div class="open-menu">
@@ -174,15 +174,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('baixo_modelo', modelo ='fenderjazz') }}">Baixo Jazz Bass</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/baixos/baixofenderjazz.php">Baixo Jazz Bass</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('baixo_modelo', modelo ='fenderprecision') }}">Baixo Precision</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/baixos/baixofenderprecision.php">Baixo Precision</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('baixo_modelo', modelo ='ibanez') }}">Baixo Ibanez</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/baixos/baixofenderprecision.php">Baixo Ibanez</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('baixo_modelo', modelo ='yamahabb') }}">Baixo Bb 435</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/baixos/baixoyamahabb.php">Baixo Bb 435</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('baixo_modelo', modelo ='yamahasignature') }}">Baixo Signature</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/baixos/baixoyamahasignature.php">Baixo Signature</a></li>
             </ul>
         </div>
         <div class="open-menu">
@@ -193,17 +193,17 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('bateria_modelo', modelo ='dw_design') }}">Bateria Dw Design</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/baterias/bateriadwdesign.php">Bateria Dw Design</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('bateria_modelo', modelo ='pearl_master') }}">Bateria Pearl Master</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/baterias/bateriapearlmaster.php">Bateria Pearl Master</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('bateria_modelo', modelo ='eletronica_roland') }}">Bateria Eletrônica
+                        href="<?= BASE_URL ?>/templates/instrumentos/baterias/bateriaeletronicaroland.php">Bateria Eletrônica
                         Roland</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('bateria_modelo', modelo ='eletronica_zildjian') }}">Bateria Eletrônica
+                        href="<?= BASE_URL ?>/templates/instrumentos/baterias/bateriaeletronicazildjian.php">Bateria Eletrônica
                         Zildjian</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('bateria_modelo', modelo ='eletronica_all_mesh') }}">Bateria Eletrônica All
+                        href="<?= BASE_URL ?>/templates/instrumentos/baterias/bateriaeletronicaallmesh.php">Bateria Eletrônica All
                         Mesh</a></li>
             </ul>
         </div>
@@ -215,15 +215,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='yamaha') }}">Teclado Yamaha</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoyamaha.php">Teclado Yamaha</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='sintetizador') }}">Teclado Sintetizador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladosintetizador.php">Teclado Sintetizador</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='nordstage') }}">Teclado Nord Stage</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladonordstage.php">Teclado Nord Stage</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='arranjador') }}">Teclado Arranjador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoarranjador.php    ">Teclado Arranjador</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='casio') }}">Teclado Casio</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladocasio.php">Teclado Casio</a></li>
             </ul>
         </div>
         <div class="open-menu">
@@ -234,15 +234,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='yamaha') }}">Teclado Yamaha</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoyamaha.php">Teclado Yamaha</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='sintetizador') }}">Teclado Sintetizador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladosintetizador.php">Teclado Sintetizador</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='nordstage') }}">Teclado Nord Stage</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladonordstage.php">Teclado Nord Stage</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='arranjador') }}">Teclado Arranjador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoarranjador.php    ">Teclado Arranjador</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='casio') }}">Teclado Casio</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladocasio.php">Teclado Casio</a></li>
             </ul>
         </div>
         <div class="open-menu">
@@ -253,15 +253,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='yamaha') }}">Teclado Yamaha</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoyamaha.php">Teclado Yamaha</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='sintetizador') }}">Teclado Sintetizador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladosintetizador.php">Teclado Sintetizador</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='nordstage') }}">Teclado Nord Stage</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladonordstage.php">Teclado Nord Stage</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='arranjador') }}">Teclado Arranjador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoarranjador.php    ">Teclado Arranjador</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="{{ url_for('teclado_modelo', modelo ='casio') }}">Teclado Casio</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladocasio.php">Teclado Casio</a></li>
             </ul>
         </div>
     </ul>

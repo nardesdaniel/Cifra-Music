@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 ?>
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/config.php';
 
 <body>
 
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/templates/base.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/templates/base.php'; ?>
 
     <main class="main">
 
@@ -23,7 +23,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/config.php';
             <div class="centrar-carrinho">
                 <p id="carrinho-vazio-none"></p>
                 <img id="imagem-vazia" src="https://i.postimg.cc/LX1wLZgM/carrinho-vazio-removebg-preview.png"
-                    width="250px" style="margin-bottom: 50px;">
+                    width="250px" style="margin-bottom: 50px; display: none;">
             </div>
         </div>
 
@@ -46,9 +46,8 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/config.php';
 
             <div class="content-values">
                 <div class="total-content">
-                    <h2 class="h2-car-total">Total </h2>
+                    <h2 class="h2-car-total">Total </h2>            
                 </div>
-
 
                 <span id="cartTotal">00.000,00</span>
 
@@ -117,6 +116,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/config.php';
 
             if (cart.length === 0) {
                 carrinhomensagem.textContent = "O carrinho está vazio.";
+                imagemVazia.style.display = "block";
                 // list.textContent = carrinhomensagem;
             }
 
@@ -150,8 +150,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/config.php';
 
             document.getElementById("btn-whatsapp").href = link;
         });
-
-
 
         /*function clearCart() {
             localStorage.removeItem("cart");

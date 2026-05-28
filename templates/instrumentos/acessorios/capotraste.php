@@ -1,4 +1,6 @@
-
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -7,13 +9,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../../static/style.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/static/style.css">
     <title>Capotraste de aluminium</title>
 </head>
 
 <body>
 
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/templates/base.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/templates/base.php'; ?>
 
     <script>
         function changeImage(element) {
@@ -101,7 +103,7 @@
                 <span data-value="5">★</span>
             </div>
 
-            <input type="text" id="reviewText" class="review-input" placeholder="Seu comentário..."><br>
+            <input type="text" class="review-input" id="reviewText" placeholder="Seu comentário..."><br>
             <button class="btn-review" id="submitReview">Enviar Avaliação</button>
 
         </div>

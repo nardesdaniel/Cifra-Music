@@ -3,16 +3,17 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="<?= BASE_URL ?>/static/style.css">
-  <title>Case de Guitarra</title>
+  <title>Palheta de Guitarra JAZZ III 1mm</title>
 </head>
 
 <body>
+
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/templates/base.php'; ?>
 
   <script>
@@ -25,16 +26,16 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
       element.classList.add("active");
     }
   </script>
-
+  
   <div class="gallery" style="justify-content: center; height: 600px;">
 
 
     <div class="main-image">
-      <img id="mainImg" src="https://i.postimg.cc/jjjT1pZx/case.webp">
+      <img id="mainImg" src="https://i.postimg.cc/Ls1XkBfT/acessorio-4.webp">
     </div>
 
     <div class="product-info">
-      <h1 class="product-title">Case de guitarra almofadada</h1>
+      <h1 class="product-title">Palheta de guitarra JAZZ III 1mm</h1>
 
       <div class="ratings">
         <div class="review-summary">
@@ -44,7 +45,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
       </div>
 
       <div class="price-block">
-        <span class="price-current">R$ 3.999,90</span>
+        <span class="price-current">R$ 18,90</span>
         <span class="price-installments">Em até 10x sem juros</span>
 
         <a class="btn-whatsapp" target="_blank"
@@ -60,33 +61,38 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 
   <div class="txt">
     <h1 style="display: flex; justify-content: center; margin-top: 30px;" class="detalhes"><br>Descrição</h1>
-    <h2>Case de guitarra almofadada</h2>
+    <h2>Palheta de guitarra JASS III 1mm</h2>
 
-    <p style="margin-left: 500px; margin-right: 500px;">A Gator Cases oferece os produtos que protegem o que é
-      importante
-      para você. Este é o Gator GC-SG. Faz parte da linha Molded Guitar Cases deles. É uma caixa Deluxe Molded para
-      elétricas de corpo sólido, como a Gibson SG.® A carcaça externa rígida, moldada em plástico ABS resistente a
-      impactos, para um exterior ultra durável com espuma EPS e forro macio, proporciona um interior protetor, protegido
-      contra riscos e riscos.</p>
+    <p style="margin-left: 500px; margin-right: 500px;">Palhetas de alta qualidade, ideais para guitarristas que buscam
+      precisão e conforto na hora de tocar. Com espessura de 1mm, oferecem um equilíbrio perfeito entre flexibilidade e
+      controle, permitindo uma performance versátil em diversos estilos musicais. Fabricadas com materiais duráveis,
+      essas
+      palhetas garantem longevidade e resistência ao desgaste, proporcionando uma experiência de uso consistente. Seu
+      design ergonômico facilita a pegada, reduzindo a fadiga durante longas sessões de prática ou apresentações ao
+      vivo.
+      Seja para iniciantes ou músicos experientes, as palhetas JASS III 1mm são uma escolha confiável para aprimorar sua
+      técnica e expressividade musical. Vendida em unidade.</p>
 
     <h1 class="especificacoes">Especificações técnicas:</h1>
 
     <ul>
-      <li>Modelo: Gator</li>
+      <li>Modelo: JASS</li>
       <li>Categoria: acessorios</li>
-      <li>Cor: Preto</li>
+      <li>Cor: Preto ou Vermelho</li>
     </ul>
 
     <h2>Fotos do Produto</h2>
 
     <div class="img-descricao">
-      <img style="width: 500px; height: 500px; margin-bottom: 20px;" src="https://i.postimg.cc/jjjT1pZx/case.webp">
+      <img style="width: 500px; height: 500px; margin-bottom: 20px;"
+        src="https://i.postimg.cc/Ls1XkBfT/acessorio-4.webp">
     </div>
   </div>
 
+
   <br>
 
-  <div class="review-section" data-page-id="caseguitarra">
+  <div class="review-section" data-page-id="palhetaguitarra">
     <h2>Avaliações de clientes</h2>
 
     <div class="review-summary">
@@ -106,6 +112,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
       <input type="text" class="review-input" id="reviewText" placeholder="Seu comentário..."></input><br>
       <button class="btn-review" id="submitReview">Enviar Avaliação</button>
 
+
     </div>
 
     <div style="align-items: end;" class="comentarios">
@@ -121,10 +128,10 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
   <script>
     function addToCart() {
       const product = {
-        id: "caseguitarra",
-        name: "Case de guitarra almofadada",
-        price: 3999.90,
-        image: "https://i.postimg.cc/jjjT1pZx/case.webp",
+        id: "palhetaguitarra",
+        name: "Palheta de guitarra JAZZ III 1mm",
+        price: 18.90,
+        image: "https://i.postimg.cc/Ls1XkBfT/acessorio-4.webp ",
         qty: 1
       };
 
@@ -143,7 +150,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
       alert("Produto adicionado ao carrinho!");
     }
   </script>
-  
+
   <footer>
     <div class="titlefooter">
 

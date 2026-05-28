@@ -3,18 +3,20 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="<?= BASE_URL ?>/static/style.css">
-  <title>Case de Guitarra</title>
+  <title>Amplificador Marshall Code 25</title>
 </head>
 
 <body>
+
   <?php include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/templates/base.php'; ?>
 
+  <!-- Java Script-->
   <script>
     function changeImage(element) {
       // trocar imagem principal
@@ -28,13 +30,26 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 
   <div class="gallery" style="justify-content: center; height: 600px;">
 
+    <div class="thumbnails">
+      <img src="https://i.postimg.cc/XJ7nJg08/amplificador-marshall.webp" class="thumb active"
+        onclick="changeImage(this)">
+      <img src="https://i.postimg.cc/sX6sZZVn/amplificador-marshall-2.webp" class="thumb" onclick="changeImage(this)">
+      <img src="https://i.postimg.cc/HnrH0snW/amplificador-marshall-3.webp" class="thumb" onclick="changeImage(this)">
+      <img src="https://i.postimg.cc/vTCy0Fx5/amplificador-marshall-4.webp" class="thumb" onclick="changeImage(this)">
+      <img src="https://i.postimg.cc/ZnXmwtv2/amplificador-marshall-5.webp" class="thumb" onclick="changeImage(this)">
+      <img src="https://i.postimg.cc/0549kmXz/amplificador-marshall-6.webp" class="thumb" onclick="changeImage(this)">
+      <img src="https://i.postimg.cc/fWPMzXq8/amplificador-marshall-7.webp" class="thumb" onclick="changeImage(this)">
+    </div>
 
     <div class="main-image">
-      <img id="mainImg" src="https://i.postimg.cc/jjjT1pZx/case.webp">
+      <img id="mainImg" src="https://i.postimg.cc/XJ7nJg08/amplificador-marshall.webp">
     </div>
 
     <div class="product-info">
-      <h1 class="product-title">Case de guitarra almofadada</h1>
+      <h1 class="product-title">
+        Amplificador Guitarra <br>
+        Marshall Code 25 <br>
+        Bluetooth 110v/220v</h1>
 
       <div class="ratings">
         <div class="review-summary">
@@ -44,11 +59,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
       </div>
 
       <div class="price-block">
-        <span class="price-current">R$ 3.999,90</span>
+        <span class="price-current">R$ 1.792,00</span>
         <span class="price-installments">Em até 10x sem juros</span>
 
         <a class="btn-whatsapp" target="_blank"
-          href="https://wa.me/5599999999999?text=Olá!%20Tenho%20interesse%20no%20Violão%20Takamine%20FT340%20BS.">
+          href="https://wa.me/55999999999?text=Olá!%20Tenho%20interesse%20no%20Violão%20Takamine%20FT340%20BS.">
           Comprar pelo WhatsApp
         </a>
         <button class="btn-cart" onclick="addToCart()">
@@ -59,34 +74,34 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
   </div>
 
   <div class="txt">
-    <h1 style="display: flex; justify-content: center; margin-top: 30px;" class="detalhes"><br>Descrição</h1>
-    <h2>Case de guitarra almofadada</h2>
+    <hr>
+    <h1 style="display: flex; justify-content: center; margin-top: 30px;" class="detalhes">Descrição</h1>
+    <h2>Teclado Yamaha Psr-e473 Arranjador Kit Capa Suporte E Pedal</h2>
 
-    <p style="margin-left: 500px; margin-right: 500px;">A Gator Cases oferece os produtos que protegem o que é
-      importante
-      para você. Este é o Gator GC-SG. Faz parte da linha Molded Guitar Cases deles. É uma caixa Deluxe Molded para
-      elétricas de corpo sólido, como a Gibson SG.® A carcaça externa rígida, moldada em plástico ABS resistente a
-      impactos, para um exterior ultra durável com espuma EPS e forro macio, proporciona um interior protetor, protegido
-      contra riscos e riscos.</p>
+    <p style="margin-left: 500px; margin-right: 500px;">O Teclado Yamaha PSR-E473 Arranjador é uma excelente opção para
+      músicos iniciantes e intermediários que buscam
+      qualidade, versatilidade e recursos profissionais em um instrumento portátil. Equipado com 61 teclas sensíveis ao
+      toque, ele oferece uma experiência de execução dinâmica e expressiva, permitindo que o músico controle a
+      intensidade
+      do som conforme a força aplicada nas teclas.</p>
 
     <h1 class="especificacoes">Especificações técnicas:</h1>
 
     <ul>
-      <li>Modelo: Gator</li>
-      <li>Categoria: acessorios</li>
-      <li>Cor: Preto</li>
+      <li>Modelo: Yamaha</li>
+      <li>Categoria: teclados</li>
+      <li>Teclas: 61 (5 oitavas) com resposta ao toque ajustável</li>
+      <li>Tela: LCD Retroiluminada</li>
+      <li>Funções Avançadas: Split, Dual, Arpeggio, Transpose, entre outras </li>
     </ul>
-
-    <h2>Fotos do Produto</h2>
-
     <div class="img-descricao">
-      <img style="width: 500px; height: 500px; margin-bottom: 20px;" src="https://i.postimg.cc/jjjT1pZx/case.webp">
+      <img src="">
     </div>
   </div>
 
   <br>
 
-  <div class="review-section" data-page-id="caseguitarra">
+  <div class="review-section" data-page-id="amplificador-marshall">
     <h2>Avaliações de clientes</h2>
 
     <div class="review-summary">
@@ -117,14 +132,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 
   <script src="<?= BASE_URL ?>/static/avaliacao.js"></script>
 
+
   <!-- SCRIPT DO CARRINHO -->
   <script>
     function addToCart() {
       const product = {
-        id: "caseguitarra",
-        name: "Case de guitarra almofadada",
-        price: 3999.90,
-        image: "https://i.postimg.cc/jjjT1pZx/case.webp",
+        id: "amplificador-marshall-code-25",
+        name: "Amplificador Guitarra Marshall Code 25 Bluetooth 110v/220v",
+        price: 1792.00,
+        image: "https://i.postimg.cc/XJ7nJg08/amplificador-marshall.webp",
         qty: 1
       };
 
@@ -143,7 +159,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
       alert("Produto adicionado ao carrinho!");
     }
   </script>
-  
   <footer>
     <div class="titlefooter">
 

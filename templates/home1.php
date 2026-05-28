@@ -1,4 +1,6 @@
-
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -6,12 +8,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Cifra Music</title>
-    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>/static/style.css">
     <link rel="icon" href="https://i.postimg.cc/j2PNnr8k/Design-sem-nome-(2).png">
 </head>
-
 <body>
-    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/templates/base.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/templates/base.php'; ?>
 
     <main class="container-home1">
 

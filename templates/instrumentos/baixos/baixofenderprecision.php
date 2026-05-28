@@ -3,18 +3,19 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="<?= BASE_URL ?>/static/style.css">
-  <title>Case de Guitarra</title>
+  <title>Fender Precision Bass 1960</title>
 </head>
 
 <body>
-  <?php include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/templates/base.php'; ?>
 
+  <?php include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/templates/base.php'; ?>
+  <!-- Java Script-->
   <script>
     function changeImage(element) {
       // trocar imagem principal
@@ -28,13 +29,19 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 
   <div class="gallery" style="justify-content: center; height: 600px;">
 
+    <div class="thumbnails">
+      <img src="https://i.postimg.cc/tRrrg3sX/Baixo-Fender-Precision.webp" class="thumb active"
+        onclick="changeImage(this)">
+      <img src="https://i.postimg.cc/z3Z22jWf/unnamed.png" class="thumb" onclick="changeImage(this)">
+      <img src="https://i.postimg.cc/hPRq5bKb/unnamed.png" class="thumb" onclick="changeImage(this)">
+    </div>
 
     <div class="main-image">
-      <img id="mainImg" src="https://i.postimg.cc/jjjT1pZx/case.webp">
+      <img id="mainImg" src="https://i.postimg.cc/xTNSsprY/unnamed.png">
     </div>
 
     <div class="product-info">
-      <h1 class="product-title">Case de guitarra almofadada</h1>
+      <h1 class="product-title">Baixo Elétrico Fender Precision 1960</h1>
 
       <div class="ratings">
         <div class="review-summary">
@@ -44,11 +51,11 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
       </div>
 
       <div class="price-block">
-        <span class="price-current">R$ 3.999,90</span>
+        <span class="price-current">R$ 69.999,00</span>
         <span class="price-installments">Em até 10x sem juros</span>
 
         <a class="btn-whatsapp" target="_blank"
-          href="https://wa.me/5599999999999?text=Olá!%20Tenho%20interesse%20no%20Violão%20Takamine%20FT340%20BS.">
+          href="https://wa.me/55999999999?text=Olá!%20Tenho%20interesse%20no%20Violão%20Takamine%20FT340%20BS.">
           Comprar pelo WhatsApp
         </a>
         <button class="btn-cart" onclick="addToCart()">
@@ -59,34 +66,39 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
   </div>
 
   <div class="txt">
-    <h1 style="display: flex; justify-content: center; margin-top: 30px;" class="detalhes"><br>Descrição</h1>
-    <h2>Case de guitarra almofadada</h2>
 
-    <p style="margin-left: 500px; margin-right: 500px;">A Gator Cases oferece os produtos que protegem o que é
-      importante
-      para você. Este é o Gator GC-SG. Faz parte da linha Molded Guitar Cases deles. É uma caixa Deluxe Molded para
-      elétricas de corpo sólido, como a Gibson SG.® A carcaça externa rígida, moldada em plástico ABS resistente a
-      impactos, para um exterior ultra durável com espuma EPS e forro macio, proporciona um interior protetor, protegido
-      contra riscos e riscos.</p>
+    <h1 style="display: flex; justify-content: center; margin-top: 30px;" class="detalhes">Descrição</h1>
+    <h2>Fender Jazz Bass American 4 cordas</h2>
+
+    <p style="margin-left: 500px; margin-right: 500px;">Baixo Elétrico Fender Precision 1960 Apresentamos o lendário
+      Fender Precision 1960, uma verdadeira obra-prima para baixistas que buscam um som autêntico e incomparável. Com
+      acabamento sunburst clássico e braço em maple com perfil exclusivo marcado 5-60, este instrumento é uma peça de
+      coleção e um titã do som grave e potente.
+
+      A escala é feita em slab Brazilian rosewood com marcadores em pontos que mantêm a autenticidade vintage do
+      instrumento. Equipado com um captador split coil original, este baixo oferece aquele timbre clássico que definiu o
+      som do rock, soul e funk nas décadas passadas.</p>
 
     <h1 class="especificacoes">Especificações técnicas:</h1>
 
     <ul>
-      <li>Modelo: Gator</li>
-      <li>Categoria: acessorios</li>
-      <li>Cor: Preto</li>
+      <li>Modelo: Fender</li>
+      <li>Categoria: baixos</li>
+      <li>Acabamento: Sunburst</li>
+      <li>Escala: Brazilian Rosewood (slab)</li>
+      <li>Braço: Maple com perfil “killer” (5-60)</li>
+      <li>Ano de fabricação: 1960</li>
     </ul>
-
-    <h2>Fotos do Produto</h2>
-
     <div class="img-descricao">
-      <img style="width: 500px; height: 500px; margin-bottom: 20px;" src="https://i.postimg.cc/jjjT1pZx/case.webp">
+      <img style="width: 500px; height: 500px; margin-bottom: 20px;" src="https://i.postimg.cc/wxPCs512/unnamed.png">
+      <img style="width: 500px; height: 500px; margin-bottom: 30px;" src="https://i.postimg.cc/hPRq5bKb/unnamed.png"
+        alt="">
     </div>
   </div>
 
   <br>
 
-  <div class="review-section" data-page-id="caseguitarra">
+  <div class="review-section" data-page-id="fenderprecision">
     <h2>Avaliações de clientes</h2>
 
     <div class="review-summary">
@@ -117,14 +129,15 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
 
   <script src="<?= BASE_URL ?>/static/avaliacao.js"></script>
 
+
   <!-- SCRIPT DO CARRINHO -->
   <script>
     function addToCart() {
       const product = {
-        id: "caseguitarra",
-        name: "Case de guitarra almofadada",
-        price: 3999.90,
-        image: "https://i.postimg.cc/jjjT1pZx/case.webp",
+        id: "violao-cort-earth-100ssf-sb",
+        name: "Violão Aço Folk Cort Earth 100SSF Sb Sunburst",
+        price: 3239.10,
+        image: "https://i.postimg.cc/T3pTP3VW/violao3-Photoroom.png",
         qty: 1
       };
 
@@ -143,7 +156,6 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
       alert("Produto adicionado ao carrinho!");
     }
   </script>
-  
   <footer>
     <div class="titlefooter">
 
@@ -225,6 +237,7 @@ require_once $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/config.php';
     </div>
 
   </footer>
+
 </body>
 
 </html>
