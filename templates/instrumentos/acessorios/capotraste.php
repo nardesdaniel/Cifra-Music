@@ -1,16 +1,19 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../static/style.css">
+
+    <link rel="stylesheet" href="../../../static/style.css">
     <title>Capotraste de aluminium</title>
 </head>
 
 <body>
-    <?php include '../templates/base.php'; ?>
+
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/templates/base.php'; ?>
 
     <script>
         function changeImage(element) {
@@ -98,8 +101,7 @@
                 <span data-value="5">★</span>
             </div>
 
-            <textarea style="margin-top: 20px; margin-bottom: 10px;" id="reviewText"
-                placeholder="Seu comentário..."></textarea><br>
+            <input type="text" id="reviewText" class="review-input" placeholder="Seu comentário..."><br>
             <button class="btn-review" id="submitReview">Enviar Avaliação</button>
 
         </div>
@@ -111,7 +113,7 @@
 
     </div>
 
-    <script src="../static/avaliacao.js"></script>
+    <script src="../../static/avaliacao.js"></script>
 
     <!-- SCRIPT DO CARRINHO -->
     <script>
@@ -139,6 +141,88 @@
             alert("Produto adicionado ao carrinho!");
         }
     </script>
+
+    <footer>
+        <div class="titlefooter">
+
+            <div class="redes">
+                <img src="https://i.postimg.cc/pVfM6gcQ/Gemini-Generated-Image-vsmi2bvsmi2bvsmi-removebg-preview.png"
+                    style="width: 230px; height: 75px;" alt="LOGO" class="logo-header">
+
+                <p>
+                    A loja referência do Brasil em instrumentos musicais,
+                    a um ano entregando excelência com mais de 10000 mil clientes satisfeitos
+                </p>
+            </div>
+
+            <ul class="redes-sociais">
+
+                <li class="rede-a">
+                    <a>Redes sociais</a>
+                </li>
+
+                <li class="um">
+                    <img style="width: 40px; height: 40px; margin-top: 13px; margin-right: 10px;"
+                        src="https://i.postimg.cc/pX0h49Wz/zap.webp">
+                    <img style="width: 40px; height: 40px; margin-top: 13px;"
+                        src="https://i.postimg.cc/rpXbkwgm/facebook-icon-free-png.png">
+                    <a href="https://www.instagram.com/ciframusicofical/">
+                        <img style="width: 65px; height: 65px; " src="https://i.postimg.cc/bNf21X6N/icon.webp">
+                    </a>
+                </li>
+
+                <li class="dois">
+                    <a href="#">
+
+                    </a>
+                </li>
+
+                <li class="tres">
+                    <a href="#">
+
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul class="contato">
+
+                <li class="contato-a">
+                    <a>Contato</a>
+                </li>
+
+                <li class="email">
+                    <p><img src="https://i.postimg.cc/m2N5Rwv7/gmail.png" alt="">
+                        sacciframusic@gmail.com
+                    </p>
+                </li>
+
+            </ul>
+
+            <ul class="horario">
+
+                <li class="horario-a">
+                    <a>Horario de Funcionamento</a>
+                </li>
+
+                <li class="relogio">
+                    <img src="https://i.postimg.cc/rsvMDQPC/relogio.png" alt="">
+                    seg a sex das 08:30 h às 12:00 h<br>
+                    seg a sex das 14:00 h às 17:00 h
+                </li>
+
+                <li></li>
+
+            </ul>
+
+
+        </div>
+        <div class="footer-bottom">
+            <p style="color: white;">&copy; 2026 Os Pythons. Todos os direitos reservados
+            </p>
+        </div>
+
+    </footer>
 </body>
 
 </html>

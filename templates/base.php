@@ -1,26 +1,30 @@
+<?php
+require_once $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/config.php';
+include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-SA-5.2.1/auth.php';
+
+?>
 
 <header>
-    
-        <nav class="navbar">
-            <div class="logo-container">
-                <a href="/">
-                    <img src="https://i.postimg.cc/pVfM6gcQ/Gemini-Generated-Image-vsmi2bvsmi2bvsmi-removebg-preview.png"
-                        style="width: 230px; height: 75px;" alt="LOGO" class="logo-header">
-                </a>
-            </div>
-            <div class="menu-header">
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="<?= BASE_URL?>/templates/home1.php">
+                <img src="https://i.postimg.cc/pVfM6gcQ/Gemini-Generated-Image-vsmi2bvsmi2bvsmi-removebg-preview.png"
+                    style="width: 230px; height: 75px;" alt="LOGO" class="logo-header">
+            </a>
+        </div>
+        <div class="menu-header">
 
-                <?php if (isset($_SESSION["logado"])): ?>
-                    <!-- <a class="login_admin" style="text-decoration: none;" href="{{ url_for('login_admin')}}">Login Admin</a> -->
-                    <div class="div-sair"><a class="sair" href="../logout.php">Sair</a>
-                    </div>
-                <?php endif; ?>
+            <?php if (isset($_SESSION["logado"])): ?>
+                <!-- <a class="login_admin" style="text-decoration: none;" href="{{ url_for('login_admin')}}">Login Admin</a> -->
+                <div class="div-sair"><a class="sair" href="../logout.php">Sair</a>
+                </div>
+            <?php endif; ?>
 
-                <a class="nav-logout" href="/carrinho"> <img
-                        src="https://i.postimg.cc/c4KLNG1P/Captura-de-tela-2025-12-08-104543-removebg-preview.png"
-                        alt="Carrinho"></a>
-            </div>
-        </nav>
+            <a class="nav-logout" href="<?= BASE_URL?>/carrinho.php"> <img
+                    src="https://i.postimg.cc/c4KLNG1P/Captura-de-tela-2025-12-08-104543-removebg-preview.png"
+                    alt="Carrinho"></a>
+        </div>
+    </nav>
 </header>
 
 <nav>
@@ -33,14 +37,14 @@
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="instrumentos/acessorios/capotraste.php">Capotraste</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/acessorios/capotraste.php">Capotraste</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
                         href="{{ url_for('acessorio_modelo', modelo='palhetaguitarra') }}">Palheta de Guitarra</a>
                 </li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
                         href="{{ url_for('acessorio_modelo', modelo='palhetafender') }}">Palheta Fender</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px; "
-                        href="{{ url_for('acessorio_modelo', modelo='caseguitarra') }}">Case de Guitarra</a></li>
+                        href="instrumentos/acessorios/caseguitarra.php">Case de Guitarra</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
                         href="{{ url_for('acessorio_modelo', modelo='caseviolao') }}">Case de Violão</a></li>
             </ul>
@@ -262,9 +266,3 @@
         </div>
     </ul>
 </nav>
-
-
-
-
-
-

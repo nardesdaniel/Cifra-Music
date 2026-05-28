@@ -1,17 +1,4 @@
-<?php
-session_start();
 
-if (!isset($_SESSION["logado"])) {
-    header("Location: index.php");
-    exit();
-}
-
-// impedir cache
-header("Cache-Control: no-cache, no-store, must-revalidate");
-header("Pragma: no-cache");
-header("Expires: 0");
-
-?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -24,7 +11,7 @@ header("Expires: 0");
 </head>
 
 <body>
-    <?php include("base.php"); ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'] . '/Cifra-Music-SA-5.2.1/templates/base.php'; ?>
 
     <main class="container-home1">
 
