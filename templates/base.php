@@ -253,15 +253,15 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoyamaha.php">Teclado Yamaha</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/clarinetebuffet.php">Clarinete Buffet</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladosintetizador.php">Teclado Sintetizador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/clarinetecannonball.php">Clarinete Cannon Ball</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladonordstage.php">Teclado Nord Stage</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/clarineteselmer.php">Clarinete Jupiter</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoarranjador.php">Teclado Arranjador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/clarineteselmer.php">Clarinete Selmer</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladocasio.php">Teclado Casio</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/clarineteyamaha   .php">Clarinete Yamaha</a></li>
             </ul>
         </div>
     </ul>
