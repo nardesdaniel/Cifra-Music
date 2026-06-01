@@ -30,7 +30,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
 <nav>
     <ul class="categoria">
         <div class="open-menu">
-            <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px; " href="/acessorios"
+            <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px; " href="<?= BASE_URL ?>/templates/instrumentos/acessorios.php"
                 tittle="Acessórios"><strong>Acessórios</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
@@ -51,7 +51,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/cordas"><strong>Cordas</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/cordas.php"><strong>Cordas</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
@@ -71,7 +71,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/pedais"><strong>Pedais</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/pedais.php"><strong>Pedais</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
@@ -91,7 +91,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/amplificadores"><strong>Amplificadores</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/amplificadores.php"><strong>Amplificadores</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
@@ -111,7 +111,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/violoes"><strong>Violões</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/violoes.php"><strong>Violões</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
@@ -130,7 +130,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/violinos"><strong>Violinos</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/violinos.php"><strong>Violinos</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
@@ -149,7 +149,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/guitarras"><strong>Guitarras</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/guitarras.php"><strong>Guitarras</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
@@ -168,7 +168,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/baixos"><strong>Baixos</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/baixos.php"><strong>Baixos</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
@@ -187,7 +187,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/baterias"><strong>Bateria</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/baterias.php"><strong>Bateria</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
@@ -209,7 +209,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/teclados"><strong>Teclados</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/teclados.php"><strong>Teclados</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
@@ -228,26 +228,26 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/saxofones"><strong>Saxofones</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/saxofones.php"><strong>Saxofones</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
             <ul class="sub-menu">
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoyamaha.php">Teclado Yamaha</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/saxofones/saxofoneyamaha.php">Saxofone Yamaha</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladosintetizador.php">Teclado Sintetizador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/saxofones/saxofoneselmer.php">Saxofone Selmer</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladonordstage.php">Teclado Nord Stage</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/saxofones/saxofonejupiter.php">Saxofone Jupiter</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoarranjador.php    ">Teclado Arranjador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/saxofones/saxofoneconn.php">Saxofone Conn</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladocasio.php">Teclado Casio</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/saxofones/saxofonecannonball.php">Saxofone Cannonball</a></li>
             </ul>
         </div>
         <div class="open-menu">
             <a class="a_open-menu" style="text-decoration: none; padding: 26px 0px;"
-                href="/clarinetes"><strong>Clarinetes</strong></a>
+                href="<?= BASE_URL ?>/templates/instrumentos/clarinetes.php"><strong>Clarinetes</strong></a>
             <img src="https://i.postimg.cc/2SvJXtwS/Pngtree-arrow-down-glyph-black-icon-4008270.png" alt=""
                 style="width: 10px;">
 
@@ -259,7 +259,7 @@ include $_SERVER['DOCUMENT_ROOT'] . '/CIFRA-MUSIC-MAIN/auth.php';
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
                         href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladonordstage.php">Teclado Nord Stage</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
-                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoarranjador.php    ">Teclado Arranjador</a></li>
+                        href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladoarranjador.php">Teclado Arranjador</a></li>
                 <li><a class="sub-cort" style="text-decoration: none; margin-top: 10px;"
                         href="<?= BASE_URL ?>/templates/instrumentos/teclados/tecladocasio.php">Teclado Casio</a></li>
             </ul>
